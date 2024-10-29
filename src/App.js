@@ -26,7 +26,8 @@ function App() {
       <Header />
       {loggedIn===false?<LogIn setLoggedIn={setLoggedIn}/>:
       <Input add={add} titleValue="" contentValue="" />}
-      {loggedIn===true?notes.map((note,index) => (
+      <div className="notes">
+    {loggedIn===true?notes.map((note,index) => (
         <Note
           key={index}
           id={index}
@@ -35,7 +36,8 @@ function App() {
           deleteNote={deleteNote}
           note={note}
         />
-      )):null}
+      )):null}</div>
+      
       
       <Footer />
     </>
