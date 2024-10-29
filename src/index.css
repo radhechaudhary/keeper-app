@@ -34,7 +34,7 @@ h1 {
   left:50%;
   transform: translate(-50%,0);
   display: flex;
-  justify-content: space-evenly;
+  justify-content: left;
   flex-wrap: wrap;
   gap:20px;
 }
