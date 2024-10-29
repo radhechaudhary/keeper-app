@@ -28,6 +28,7 @@ h1 {
   color: #f8f2f2;
 }
 .notes{
+  padding:10px;
   width:100%;
   position: relative;
   left:50%;
@@ -39,7 +40,10 @@ h1 {
 }
 
 .note {
-  width: 240px;
+  max-width: 240px;
+  min-width:200px;
+  flex-grow: 1;
+  flex-shrink:1;
   background-color: #fff;
   border-radius: 5px;
   box-shadow: 2px 5px rgba(0, 0, 0, 0.3);
@@ -144,7 +148,7 @@ h1 {
   text-decoration: underline;
 }
 
-@media (max-width:600px){
+@media (max-width:500px){
   .input-box{
     width:90%;
   }
@@ -152,8 +156,6 @@ h1 {
     width:90%;
   }
   .note{
-    width:100%;
-    display:block;
+    max-width:100%;
   }
-
 }
